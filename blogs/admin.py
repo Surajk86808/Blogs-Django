@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Catergory
+from .models import Category
 from .models import Blog
 
 
@@ -9,5 +9,5 @@ class BlogAdmin(admin.ModelAdmin):
     search_fields = ('author','title','blog_body','status')
     
 # Register your models here.
-admin.site.register(Catergory)
+admin.site.register(Category)
 admin.site.register(Blog ,BlogAdmin) 
